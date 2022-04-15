@@ -1,9 +1,9 @@
 <?php
 
-include 'Car.php';
-include 'Aircraft.php';
+require 'Autoloader.php';
 
-$car = new Car\Car();
+$car = new Car();
 $car->move();
-$air = new Aircraft\Aircraft();
+
+$air = new Aircraft();
 $air->fly();
